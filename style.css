@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+li {
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--Dark-Charcoal);
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+img {
+    width: 100%;
+    max-width: 767px;
+}
+
+.paragraph {
+    margin: 20px 0px 25px;
+
+}
+
+section {
+    width: 85%;
+    margin: auto;
+}
+
+.preparation {
+    border-radius: 5%;
+    background-color: var(--Rose-White);
+    width: 80%;
+    margin: 0px auto 25px;
+    padding: 5px;
+}
+.preparation ul>li {
+    margin-left: 40px;
+    width: 70%;
+}
+.preparation h3 {
+    color: var(--Dark-Raspberry);
+}
+
+ul>li {
+    margin: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: var(--Nutmeg);
+    font-family: 'Young Serif', serif;
+    font-weight: 700;
+}
+
+.Ingredients ul>li {
+    margin-left: 17px;
+}
+
+.Ingredients li {
+    padding-left: 15px;
+}
+
+hr {
+    text-decoration-line: none;
+    height: 1px;
+    color: var(--Light-Grey);
+    margin: 20px 0px 20px;
+}
+
+.instructions li {
+    padding-left: 15px;
+
+}
+
+.instructions ol>li {
+    margin: 8px 17px;
+}
+
+.color {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+/*Tablets And Destokp: 1440px*/
+@media screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        margin: 55px auto 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--Eggshell);
+    }
+
+    section {
+        width: 90%;
+        margin: auto;
+    }
+
+    img {
+        border-radius: 12px
+    }
+
+    .container {
+        background-color: var(--white);
+        padding: 15px;
+        width: 500px;
+        border-radius: 12px;
+
+    }
+
+    ol {
+        text-align: justify;
+    }
+
+    .preparation {
+        border-radius: 5%;
+        background-color: var(--Rose-White);
+        width: 100%;
+    }
+
+}
